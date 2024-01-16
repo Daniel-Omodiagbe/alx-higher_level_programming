@@ -14,4 +14,4 @@ elif number < 0:
     number = number * -1
     numb = number % 10
     print(f"Last digit of {number * -1} is {numb * -1}\
-        and is less than 6 and not 0")
+    and is less than 6 and not 0")
