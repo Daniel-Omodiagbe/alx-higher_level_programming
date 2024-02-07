@@ -7,4 +7,4 @@ class Square:
     attribute size and instantiation with size"""
     def __init__(self, size):
         """instantiation of attributes"""
-        self.size = size
+        self.__size = size
