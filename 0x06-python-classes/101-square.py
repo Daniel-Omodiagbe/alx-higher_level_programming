@@ -64,7 +64,7 @@ class Square:
         """print to stdout"""
         new_print = []
         if self.__size == 0:
-            return "\n"
+            return ""
         else:
             if self.__position[1] > 0:
                 for i in range(self.__position[1]):
