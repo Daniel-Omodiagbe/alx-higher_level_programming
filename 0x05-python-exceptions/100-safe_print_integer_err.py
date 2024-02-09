@@ -1,9 +1,12 @@
 #!/usr/bin/python3
+from sys import stderr
+
+
 def safe_print_integer_err(value):
     """prints an integer"""
     try:
         print("{:d}".format(value))
         return True
     except Exception as err:
-        print(f"Exception: {err}")
+        stderr.write(f"Exception: {err} \n")
     return False
