@@ -1,0 +1,32 @@
+The 0-add_integer test module
+=============================================================
+This is an addition module
+==============================================================
+
+Using the function `add`
+--------------------------------------------------------------
+
+Import function from module:
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(0)
+98
+
+>>> add_integer(6, 9)
+15
+
+>>> add_integer("b", 9)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+>>> add_integer(5, "d")
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+>>> add_integer(100.3, -4)
+96
+
+>>> add_integer(6, 7.8)
+13
