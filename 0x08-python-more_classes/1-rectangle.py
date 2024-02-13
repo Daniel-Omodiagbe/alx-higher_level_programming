@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" This module defines a rectangle class """
+""" This module defines a rectangle class based on 0-rectangle """
 
 
 class Rectangle:
-    """ defines a rectangle """
+    """ defines a rectangle based on 0-rectangle"""
 
     def __init__(self, width=0, height=0):
         """ instantiation of class """
