@@ -29,12 +29,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """ retrieves the width attribute """
+        """ retrieves the height attribute """
         return self.__height
 
     @height.setter
     def height(self, value):
-        """ sets the value of width attribute """
+        """ sets the value of height attribute """
         if value not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
