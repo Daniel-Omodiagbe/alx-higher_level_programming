@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 This module defines a rectangle class based on 0-rectangle
+The class has two attributes namely: width and height
 """
 
 
