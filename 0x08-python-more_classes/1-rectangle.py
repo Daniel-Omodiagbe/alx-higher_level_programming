@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" This module defines a rectangle class based on 0-rectangle """
+"""
+This module defines a rectangle class based on 0-rectangle
+"""
 
 
 class Rectangle:
