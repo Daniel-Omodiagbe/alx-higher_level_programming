@@ -77,10 +77,36 @@ class Rectangle(Base):
 
     def display(self):
         """prints in stdout the rectangle using #"""
+        for i in range(self.__y):
+            print()
         for i in range(self.__height):
+            print(" " * self.__x, end="")
             print("#" * self.__width)
 
     def __str__(self):
         """returns [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - \
-        {self.__width}/{self.__height}"
+{self.__width}/{self.__height}"
+
+    def update(self, *args):
+        """assigns an argument to each attribute"""
+        if len(args) == 1:
+            self.id = args[0]
+        elif len(args) == 2:
+            self.id = args[0]
+            self.__width = args[1]
+        elif len(args) == 3:
+            self.id = args[0]
+            self.__width = args[1]
+            self.__height = args[2]
+        elif len(args) == 4:
+            self.id = args[0]
+            self.__width = args[1]
+            self.__height = args[2]
+            self.__x = args[3]
+        elif len(args) == 5:
+            self.id = args[0]
+            self.__width = args[1]
+            self.__height = args[2]
+            self.__x = args[3]
+            self.__y = args[4]
