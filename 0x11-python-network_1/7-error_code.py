@@ -9,9 +9,8 @@ import requests
 
 
 if __name__ == "__main__":
-    try:
-        req = requests.get(sys.argv[1])
-        req.raise_for_status()
-        print(req.text)
-    except requests.exceptions.HTTPError as http_err:
+    req = requests.get(sys.argv[1])
+    if req.status_code >= 400:
         print(f"Error code: {req.status_code}")
+    else:
+        print(req.text)
