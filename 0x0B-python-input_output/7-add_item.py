@@ -10,6 +10,7 @@ try:
     load_from_json_file("add_item.json")
 except:
     FileNotFoundError
+    pass
 arg_list = []
 for i in range(1, len(sys.argv)):
     arg_list.append(sys.argv[i])
