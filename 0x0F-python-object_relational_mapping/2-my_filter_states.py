@@ -13,6 +13,7 @@ if __name__ == "__main__":
      ORDER BY states.id ASC""".format(argv[4]))
     states1 = cur.fetchall()
     for state in states1:
-        print(state)
+        if state[1] == argv[4]:
+            print(state)
     cur.close()
     conn.close()
